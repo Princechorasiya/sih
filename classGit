@@ -1,0 +1,430 @@
+prince365@prince365:~/mlProj/sih-internal$ git init
+Reinitialized existing Git repository in /home/prince365/mlProj/sih-internal/.git/
+prince365@prince365:~/mlProj/sih-internal$ git init
+git add README.md
+git commit -m "first commit"
+Reinitialized existing Git repository in /home/prince365/mlProj/sih-internal/.git/
+[main (root-commit) 7ae950a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+prince365@prince365:~/mlProj/sih-internal$ git branch -M main
+git remote add origin https://github.com/Princechorasiya/sih.git
+error: remote origin already exists.
+prince365@prince365:~/mlProj/sih-internal$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Princechorasiya/sih.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+prince365@prince365:~/mlProj/sih-internal$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitattributes
+        .gitignore
+        1749.ipynb
+        Engineering.json
+        Extract.ipynb
+        Server/
+        client/
+        data.json
+        data1.json
+        insertData.js
+        ntfs_recovery.log
+        package-lock.json
+        package.json
+        shit.json
+        test.js
+        trend.js
+        txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+prince365@prince365:~/mlProj/sih-internal$ git add .
+prince365@prince365:~/mlProj/sih-internal$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitattributes
+        new file:   .gitignore
+        new file:   1749.ipynb
+        new file:   Engineering.json
+        new file:   Extract.ipynb
+        new file:   Server/.env
+        new file:   Server/README.md
+        new file:   Server/config/cloudinary.js
+        new file:   Server/controllers/JobTitle.js
+        new file:   Server/controllers/applicationController.js
+        new file:   Server/controllers/careerController.js
+        new file:   Server/controllers/mentorController.js
+        new file:   Server/controllers/resourceController.js
+        new file:   Server/controllers/workshopController.js
+        new file:   Server/db.js
+        new file:   Server/index.js
+        new file:   Server/middleware/auth.js
+        new file:   Server/middleware/upload.js
+        new file:   Server/models/Application.js
+        new file:   Server/models/College.js
+        new file:   Server/models/Company.js
+        new file:   Server/models/Interest.js
+        new file:   Server/models/JobTitle.js
+        new file:   Server/models/Mentor.js
+        new file:   Server/models/Post.js
+        new file:   Server/models/Profile.js
+        new file:   Server/models/Recommendation.js
+        new file:   Server/models/Resource.js
+        new file:   Server/models/Skill.js
+        new file:   Server/models/Strength.js
+        new file:   Server/models/User.js
+        new file:   Server/models/Workshop.js
+        new file:   Server/models/careerModel.js
+        new file:   Server/models/videoModel.js
+        new file:   Server/package-lock.json
+        new file:   Server/package.json
+        new file:   Server/routes/Jobtitle.js
+        new file:   Server/routes/Recommendation.js
+        new file:   Server/routes/applicationRoutes.js
+        new file:   Server/routes/authRoutes.js
+        new file:   Server/routes/careerRoutes.js
+        new file:   Server/routes/collegesRoutes.js
+        new file:   Server/routes/communityRoutes.js
+        new file:   Server/routes/interestRoutes.js
+        new file:   Server/routes/mentorRoutes.js
+        new file:   Server/routes/profileRoutes.js
+        new file:   Server/routes/resourceRoutes.js
+        new file:   Server/routes/skillsRoutes.js
+        new file:   Server/routes/strengthRoutes.js
+        new file:   Server/routes/videoRoutes.js
+        new file:   Server/routes/workshopRoutes.js
+        new file:   Server/uploads/1725694648823.png
+        new file:   Server/uploads/1725695167230.jpg
+        new file:   Server/uploads/1726405512001.pdf
+        new file:   client/.env
+        new file:   client/.gitignore
+        new file:   client/README.md
+        new file:   client/components.json
+        new file:   client/eslint.config.js
+        new file:   client/index.html
+        new file:   client/package-lock.json
+        new file:   client/package.json
+        new file:   client/postcss.config.js
+        new file:   client/public/boy.png
+        new file:   client/public/hacker.png
+        new file:   client/public/human.png
+        new file:   client/public/login.jpg
+        new file:   client/public/vite.svg
+        new file:   client/public/zap.png
+        new file:   client/src/Admin/DashBoard.jsx
+        new file:   client/src/App.css
+        new file:   client/src/App.jsx
+        new file:   client/src/AuthContext.jsx
+        new file:   client/src/Bots/chatbot.jsx
+        new file:   client/src/Pages/API/Gemini.jsx
+        new file:   client/src/Pages/Button.jsx
+        new file:   client/src/Pages/DashBoard.jsx
+        new file:   client/src/Pages/DashBoard/MentorDashBoard.jsx
+        new file:   client/src/Pages/Educate/VideoForm.jsx
+        new file:   client/src/Pages/Educate/VideoList.jsx
+        new file:   client/src/Pages/Error/NotFound.jsx
+        new file:   client/src/Pages/Forms/AddWorkshop.jsx
+        new file:   client/src/Pages/Forms/CareerForm.jsx
+        new file:   client/src/Pages/Forms/CollegesManagement.jsx
+        new file:   client/src/Pages/Forms/CompaniesManagement.jsx
+        new file:   client/src/Pages/Forms/InterestManagement.jsx
+        new file:   client/src/Pages/Forms/JobDetail.jsx
+        new file:   client/src/Pages/Forms/JobTitles.jsx
+        new file:   client/src/Pages/Forms/Questions.jsx
+        new file:   client/src/Pages/Forms/Recommendation.jsx
+        new file:   client/src/Pages/Forms/SkillsManagement.jsx
+        new file:   client/src/Pages/Forms/StrengthManagement.jsx
+        new file:   client/src/Pages/Headers/Footer.jsx
+        new file:   client/src/Pages/Headers/Navbar.jsx
+        new file:   client/src/Pages/Home.jsx
+        new file:   client/src/Pages/HomePage/AskMentor.jsx
+        new file:   client/src/Pages/HomePage/FAQ.jsx
+        new file:   client/src/Pages/HomePage/HeroSection.jsx
+        new file:   client/src/Pages/HomePage/ImageCarousel.jsx
+        new file:   client/src/Pages/HomePage/whytochoose.jsx
+        new file:   client/src/Pages/Loader/Loader.jsx
+        new file:   client/src/Pages/MentoHome.jsx
+        new file:   client/src/Pages/Mentor Home/HomePage.jsx
+        new file:   client/src/Pages/MentorShip/BookAppointment.jsx
+        new file:   client/src/Pages/MentorShip/Delete.jsx
+        new file:   client/src/Pages/MentorShip/EditMentorForm.jsx
+        new file:   client/src/Pages/MentorShip/Form.jsx
+        new file:   client/src/Pages/MentorShip/List.jsx
+        new file:   client/src/Pages/MentorShip/MentoFeedback.jsx
+        new file:   client/src/Pages/MentorShip/MentorAppointments.jsx
+        new file:   client/src/Pages/MentorShip/MentorList.jsx
+        new file:   client/src/Pages/MentorShip/Registor.jsx
+        new file:   client/src/Pages/MentorShip/Tracker.jsx
+        new file:   client/src/Pages/MentorShip/UserAppointment.jsx
+        new file:   client/src/Pages/Profile/Model.jsx
+        new file:   client/src/Pages/Profile/Profile.jsx
+        new file:   client/src/Pages/Protection/ProtectedRoute.jsx
+        new file:   client/src/Pages/Protection/Unauthoried.jsx
+        new file:   client/src/Pages/Quiz/Prediction.jsx
+        new file:   client/src/Pages/Quiz/Quiz.jsx
+        new file:   client/src/Pages/Recommendation/DummyInfo.jsx
+        new file:   client/src/Pages/Recommendation/JobTitle.jsx
+        new file:   client/src/Pages/Recommendation/RecommDetails.jsx
+        new file:   client/src/Pages/Recommendation/Recommendation.jsx
+        new file:   client/src/Pages/Recommendation/jobinfo.jsx
+        new file:   client/src/Pages/Resourses/AddResourses.jsx
+        new file:   client/src/Pages/Resourses/ViewResourses.jsx
+        new file:   client/src/Pages/Roadmap/Roadmap.jsx
+        new file:   client/src/Pages/User/Login.jsx
+        new file:   client/src/Pages/User/Signup.jsx
+        new file:   client/src/Pages/Workshops/AvailableWorkshops.jsx
+        new file:   client/src/Pages/community/community.jsx
+        new file:   client/src/Roadmap/Frontend.jsx
+        new file:   client/src/assets/react.svg
+        new file:   client/src/components/ui/accordion.tsx
+        new file:   client/src/components/ui/alert.tsx
+        new file:   client/src/components/ui/avatar.tsx
+        new file:   client/src/components/ui/badge.tsx
+        new file:   client/src/components/ui/button.tsx
+        new file:   client/src/components/ui/card.tsx
+        new file:   client/src/components/ui/checkbox.tsx
+        new file:   client/src/components/ui/dialog.tsx
+        new file:   client/src/components/ui/input.tsx
+        new file:   client/src/components/ui/label.tsx
+        new file:   client/src/components/ui/pagination.tsx
+        new file:   client/src/components/ui/progress.tsx
+        new file:   client/src/components/ui/radio-group.tsx
+        new file:   client/src/components/ui/scroll-area.tsx
+        new file:   client/src/components/ui/select.tsx
+        new file:   client/src/components/ui/slider.tsx
+        new file:   client/src/components/ui/switch.tsx
+        new file:   client/src/components/ui/tabs.tsx
+        new file:   client/src/components/ui/textarea.tsx
+        new file:   client/src/components/ui/toast.tsx
+        new file:   client/src/components/ui/toaster.tsx
+        new file:   client/src/components/ui/tooltip.tsx
+        new file:   client/src/config.jsx
+        new file:   client/src/hooks/use-toast.ts
+        new file:   client/src/index.css
+        new file:   client/src/lib/utils.ts
+        new file:   client/src/main.jsx
+        new file:   client/tailwind.config.js
+        new file:   client/tsconfig.app.json
+        new file:   client/tsconfig.json
+        new file:   client/vite.config.js
+        new file:   client/zap.png
+        new file:   data.json
+        new file:   data1.json
+        new file:   insertData.js
+        new file:   ntfs_recovery.log
+        new file:   package-lock.json
+        new file:   package.json
+        new file:   shit.json
+        new file:   test.js
+        new file:   trend.js
+        new file:   txt
+
+prince365@prince365:~/mlProj/sih-internal$ git commit -m "sih-server-client"
+[main 00509ac] sih-server-client
+ 176 files changed, 56517 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 1749.ipynb
+ create mode 100644 Engineering.json
+ create mode 100644 Extract.ipynb
+ create mode 100644 Server/.env
+ create mode 100644 Server/README.md
+ create mode 100644 Server/config/cloudinary.js
+ create mode 100644 Server/controllers/JobTitle.js
+ create mode 100644 Server/controllers/applicationController.js
+ create mode 100644 Server/controllers/careerController.js
+ create mode 100644 Server/controllers/mentorController.js
+ create mode 100644 Server/controllers/resourceController.js
+ create mode 100644 Server/controllers/workshopController.js
+ create mode 100644 Server/db.js
+ create mode 100644 Server/index.js
+ create mode 100644 Server/middleware/auth.js
+ create mode 100644 Server/middleware/upload.js
+ create mode 100644 Server/models/Application.js
+ create mode 100644 Server/models/College.js
+ create mode 100644 Server/models/Company.js
+ create mode 100644 Server/models/Interest.js
+ create mode 100644 Server/models/JobTitle.js
+ create mode 100644 Server/models/Mentor.js
+ create mode 100644 Server/models/Post.js
+ create mode 100644 Server/models/Profile.js
+ create mode 100644 Server/models/Recommendation.js
+ create mode 100644 Server/models/Resource.js
+ create mode 100644 Server/models/Skill.js
+ create mode 100644 Server/models/Strength.js
+ create mode 100644 Server/models/User.js
+ create mode 100644 Server/models/Workshop.js
+ create mode 100644 Server/models/careerModel.js
+ create mode 100644 Server/models/videoModel.js
+ create mode 100644 Server/package-lock.json
+ create mode 100644 Server/package.json
+ create mode 100644 Server/routes/Jobtitle.js
+ create mode 100644 Server/routes/Recommendation.js
+ create mode 100644 Server/routes/applicationRoutes.js
+ create mode 100644 Server/routes/authRoutes.js
+ create mode 100644 Server/routes/careerRoutes.js
+ create mode 100644 Server/routes/collegesRoutes.js
+ create mode 100644 Server/routes/communityRoutes.js
+ create mode 100644 Server/routes/interestRoutes.js
+ create mode 100644 Server/routes/mentorRoutes.js
+ create mode 100644 Server/routes/profileRoutes.js
+ create mode 100644 Server/routes/resourceRoutes.js
+ create mode 100644 Server/routes/skillsRoutes.js
+ create mode 100644 Server/routes/strengthRoutes.js
+ create mode 100644 Server/routes/videoRoutes.js
+ create mode 100644 Server/routes/workshopRoutes.js
+ create mode 100644 Server/uploads/1725694648823.png
+ create mode 100644 Server/uploads/1725695167230.jpg
+ create mode 100644 Server/uploads/1726405512001.pdf
+ create mode 100644 client/.env
+ create mode 100644 client/.gitignore
+ create mode 100644 client/README.md
+ create mode 100644 client/components.json
+ create mode 100644 client/eslint.config.js
+ create mode 100644 client/index.html
+ create mode 100644 client/package-lock.json
+ create mode 100644 client/package.json
+ create mode 100644 client/postcss.config.js
+ create mode 100644 client/public/boy.png
+ create mode 100644 client/public/hacker.png
+ create mode 100644 client/public/human.png
+ create mode 100644 client/public/login.jpg
+ create mode 100644 client/public/vite.svg
+ create mode 100644 client/public/zap.png
+ create mode 100644 client/src/Admin/DashBoard.jsx
+ create mode 100644 client/src/App.css
+ create mode 100644 client/src/App.jsx
+ create mode 100644 client/src/AuthContext.jsx
+ create mode 100644 client/src/Bots/chatbot.jsx
+ create mode 100644 client/src/Pages/API/Gemini.jsx
+ create mode 100644 client/src/Pages/Button.jsx
+ create mode 100644 client/src/Pages/DashBoard.jsx
+ create mode 100644 client/src/Pages/DashBoard/MentorDashBoard.jsx
+ create mode 100644 client/src/Pages/Educate/VideoForm.jsx
+ create mode 100644 client/src/Pages/Educate/VideoList.jsx
+ create mode 100644 client/src/Pages/Error/NotFound.jsx
+ create mode 100644 client/src/Pages/Forms/AddWorkshop.jsx
+ create mode 100644 client/src/Pages/Forms/CareerForm.jsx
+ create mode 100644 client/src/Pages/Forms/CollegesManagement.jsx
+ create mode 100644 client/src/Pages/Forms/CompaniesManagement.jsx
+ create mode 100644 client/src/Pages/Forms/InterestManagement.jsx
+ create mode 100644 client/src/Pages/Forms/JobDetail.jsx
+ create mode 100644 client/src/Pages/Forms/JobTitles.jsx
+ create mode 100644 client/src/Pages/Forms/Questions.jsx
+ create mode 100644 client/src/Pages/Forms/Recommendation.jsx
+ create mode 100644 client/src/Pages/Forms/SkillsManagement.jsx
+ create mode 100644 client/src/Pages/Forms/StrengthManagement.jsx
+ create mode 100644 client/src/Pages/Headers/Footer.jsx
+ create mode 100644 client/src/Pages/Headers/Navbar.jsx
+ create mode 100644 client/src/Pages/Home.jsx
+ create mode 100644 client/src/Pages/HomePage/AskMentor.jsx
+ create mode 100644 client/src/Pages/HomePage/FAQ.jsx
+ create mode 100644 client/src/Pages/HomePage/HeroSection.jsx
+ create mode 100644 client/src/Pages/HomePage/ImageCarousel.jsx
+ create mode 100644 client/src/Pages/HomePage/whytochoose.jsx
+ create mode 100644 client/src/Pages/Loader/Loader.jsx
+ create mode 100644 client/src/Pages/MentoHome.jsx
+ create mode 100644 client/src/Pages/Mentor Home/HomePage.jsx
+ create mode 100644 client/src/Pages/MentorShip/BookAppointment.jsx
+ create mode 100644 client/src/Pages/MentorShip/Delete.jsx
+ create mode 100644 client/src/Pages/MentorShip/EditMentorForm.jsx
+ create mode 100644 client/src/Pages/MentorShip/Form.jsx
+ create mode 100644 client/src/Pages/MentorShip/List.jsx
+ create mode 100644 client/src/Pages/MentorShip/MentoFeedback.jsx
+ create mode 100644 client/src/Pages/MentorShip/MentorAppointments.jsx
+ create mode 100644 client/src/Pages/MentorShip/MentorList.jsx
+ create mode 100644 client/src/Pages/MentorShip/Registor.jsx
+ create mode 100644 client/src/Pages/MentorShip/Tracker.jsx
+ create mode 100644 client/src/Pages/MentorShip/UserAppointment.jsx
+ create mode 100644 client/src/Pages/Profile/Model.jsx
+ create mode 100644 client/src/Pages/Profile/Profile.jsx
+ create mode 100644 client/src/Pages/Protection/ProtectedRoute.jsx
+ create mode 100644 client/src/Pages/Protection/Unauthoried.jsx
+ create mode 100644 client/src/Pages/Quiz/Prediction.jsx
+ create mode 100644 client/src/Pages/Quiz/Quiz.jsx
+ create mode 100644 client/src/Pages/Recommendation/DummyInfo.jsx
+ create mode 100644 client/src/Pages/Recommendation/JobTitle.jsx
+ create mode 100644 client/src/Pages/Recommendation/RecommDetails.jsx
+ create mode 100644 client/src/Pages/Recommendation/Recommendation.jsx
+ create mode 100644 client/src/Pages/Recommendation/jobinfo.jsx
+ create mode 100644 client/src/Pages/Resourses/AddResourses.jsx
+ create mode 100644 client/src/Pages/Resourses/ViewResourses.jsx
+ create mode 100644 client/src/Pages/Roadmap/Roadmap.jsx
+ create mode 100644 client/src/Pages/User/Login.jsx
+ create mode 100644 client/src/Pages/User/Signup.jsx
+ create mode 100644 client/src/Pages/Workshops/AvailableWorkshops.jsx
+ create mode 100644 client/src/Pages/community/community.jsx
+ create mode 100644 client/src/Roadmap/Frontend.jsx
+ create mode 100644 client/src/assets/react.svg
+ create mode 100644 client/src/components/ui/accordion.tsx
+ create mode 100644 client/src/components/ui/alert.tsx
+ create mode 100644 client/src/components/ui/avatar.tsx
+ create mode 100644 client/src/components/ui/badge.tsx
+ create mode 100644 client/src/components/ui/button.tsx
+ create mode 100644 client/src/components/ui/card.tsx
+ create mode 100644 client/src/components/ui/checkbox.tsx
+ create mode 100644 client/src/components/ui/dialog.tsx
+ create mode 100644 client/src/components/ui/input.tsx
+ create mode 100644 client/src/components/ui/label.tsx
+ create mode 100644 client/src/components/ui/pagination.tsx
+ create mode 100644 client/src/components/ui/progress.tsx
+ create mode 100644 client/src/components/ui/radio-group.tsx
+ create mode 100644 client/src/components/ui/scroll-area.tsx
+ create mode 100644 client/src/components/ui/select.tsx
+ create mode 100644 client/src/components/ui/slider.tsx
+ create mode 100644 client/src/components/ui/switch.tsx
+ create mode 100644 client/src/components/ui/tabs.tsx
+ create mode 100644 client/src/components/ui/textarea.tsx
+ create mode 100644 client/src/components/ui/toast.tsx
+ create mode 100644 client/src/components/ui/toaster.tsx
+ create mode 100644 client/src/components/ui/tooltip.tsx
+ create mode 100644 client/src/config.jsx
+ create mode 100644 client/src/hooks/use-toast.ts
+ create mode 100644 client/src/index.css
+ create mode 100644 client/src/lib/utils.ts
+ create mode 100644 client/src/main.jsx
+ create mode 100644 client/tailwind.config.js
+ create mode 100644 client/tsconfig.app.json
+ create mode 100644 client/tsconfig.json
+ create mode 100644 client/vite.config.js
+ create mode 100644 client/zap.png
+ create mode 100644 data.json
+ create mode 100644 data1.json
+ create mode 100644 insertData.js
+ create mode 100644 ntfs_recovery.log
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 shit.json
+ create mode 100644 test.js
+ create mode 100644 trend.js
+ create mode 100644 txt
+prince365@prince365:~/mlProj/sih-internal$ git push origin main
+Enumerating objects: 215, done.
+Counting objects: 100% (215/215), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (195/195), done.
+error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+Writing objects: 100% (214/214), 1.12 MiB | 24.00 KiB/s, done.
+Total 214 (delta 21), reused 0 (delta 0), pack-reused 0
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+prince365@prince365:~/mlProj/sih-internal$ git push origin main
+Enumerating objects: 215, done.
+Counting objects: 100% (215/215), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (195/195), done.
+Writing objects: 100% (214/214), 1.12 MiB | 45.00 KiB/s, done.
+Total 214 (delta 21), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (21/21), done.
+To https://github.com/Princechorasiya/sih.git
+   7ae950a..00509ac  main -> main
+prince365@prince365:~/mlProj/sih-internal$ 
