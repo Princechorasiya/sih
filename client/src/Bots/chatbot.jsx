@@ -56,7 +56,7 @@ export default function ChatBot() {
     
       try {
         const response = await axios.post(
-          'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAfptFu8AVW_0jFnqyefjWE7jYeZnRzVIk',
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=',
           payload,
           {
             headers: {
